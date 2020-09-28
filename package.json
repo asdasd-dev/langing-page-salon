@@ -1,0 +1,23 @@
+{
+  "name": "beauty-salon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html -p 3000 --open",
+    "build:parcel": "parcel build src/index.html --public-url ./",
+    "clean": "rm -rf dist/*",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "parcel-plugin-imagemin": "^4.0.1",
+    "parcel-plugin-svg-sprite": "^1.4.1"
+  }
+}
